@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>Hello React Flux</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.0/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.0/react-dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flux/2.1.1/Flux.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/EventEmitter/5.0.0/EventEmitter.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+	<script type="text/babel">window.App = {};</script>
+	<script type="text/babel" src="./Scripts/dispatcher/AppDispatcher.js"></script>
+	<script type="text/babel" src="./Scripts/constants/ActionTypes.js"></script>
+	<script type="text/babel" src="./Scripts/actions/AppAction.js"></script>
+	<script type="text/babel" src="./Scripts/stores/AppStore.js"></script>
+    <script type="text/babel" src="./Scripts/components/TestInternal.js"></script>
+    <script type="text/babel" src="./Scripts/components/TestFuncTransfer.js"></script>
+    <script type="text/babel">
+		const { TestFuncTransfer } = window.App;
+
+		ReactDOM.render(<TestFuncTransfer />, document.getElementById('app'));
+    </script>
+</body>
+</html>
