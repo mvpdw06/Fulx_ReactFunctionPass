@@ -15,5 +15,5 @@ This is a practice delete-function pass using React Flux.
 2. Flux's Store
 3. React components
 
-## without Flux version
+## without Flux version (using React only)
 * source: [ReactJS_FunctionPass](https://jsfiddle.net/mvpdw06/9hn8ajjs/)
